@@ -1,2 +1,2 @@
-# projetos
-Compilado de projetos para site de portfólio.
+# Compilado de Projetos
+Compilado de projetos para alimentação do site de portfólio.
