@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | BI Financeiro</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: #000421;
+      color: #eaeaf0;
+      line-height: 1.6;
+      font-family: Bahnschrift, "Segoe UI", Arial, sans-serif;
+    }
+
+    /* NAV */
+    nav {
+      max-width: 1100px;
+      margin: 10px auto 0;
+      padding: 0 20px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 24px;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 90px 20px 80px;
+      text-align: center;
+      background: linear-gradient(135deg, #000421, #0a1a6a);
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 35px;
+      font-size: 1.15rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background: #fff;
+      color: #000421;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn-outline {
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.15);
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 1100px;
+      margin: 70px auto;
+      padding: 0 20px;
+    }
+
+    /* PROJECT */
+    .project-card {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      margin-bottom: 80px;
+      align-items: center;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+      transition: 0.3s;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .project-content h2 {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
+
+    .context, .solution, .impact {
+      margin-bottom: 12px;
+      font-size: 1rem;
+    }
+
+    .tags {
+      margin: 20px 0 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tags span {
+      background: rgba(10,26,106,0.35);
+      color: #c7d2ff;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+
+    /* ABOUT */
+    .about {
+      max-width: 720px;
+      margin: 0 auto 90px;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    .about p {
+      color: #ccc;
+      font-size: 1.05rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 900px) {
+      .project-card {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 2.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#projetos">Projetos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Dashboards Financeiros que Transformam Dados em Decisão</h1>
+    <p>
+      Análises financeiras em Power BI com foco em Fluxo de Caixa, DRE
+      e leitura executiva para gestores.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projetos" class="btn">Ver Projetos</a>
+      <a href="https://github.com/carloseduardo-finance" target="_blank" class="btn-outline">GitHub</a>
+    </div>
+  </header>
+
+  <main class="container" id="projetos">
+
+    <section class="project-card">
+      <img src="images/dashboard-fluxo-caixa.png" alt="Dashboard Fluxo de Caixa" />
+
+      <div class="project-content">
+        <h2>Dashboard de Fluxo de Caixa</h2>
+
+        <p class="context">
+          Problema: dificuldade em visualizar resultado financeiro mensal
+          e composição de entradas e saídas.
+        </p>
+
+        <p class="solution">
+          Solução: dashboard interativo com indicadores-chave, análise temporal
+          e detalhamento por categoria.
+        </p>
+
+        <p class="impact">
+          Impacto: visão clara do resultado mensal e suporte direto à
+          tomada de decisão gerencial.
+        </p>
+
+        <div class="tags">
+          <span>Power BI</span>
+          <span>DAX</span>
+          <span>Excel</span>
+          <span>Modelagem</span>
+          <span>Análise Financeira</span>
+        </div>
+
+        <a href="https://github.com/carloseduardo-finance/analise-fluxo-caixa" target="_blank" class="btn">Ver Projeto no GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <section class="about" id="sobre">
+    <h2>Sobre mim</h2>
+    <p>
+      Formado em Ciências Contábeis, com foco em análise de dados financeiros,
+      Power BI e storytelling para apoiar decisões de negócio.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 • Portfólio profissional • BI Financeiro</p>
+  </footer>
+
+</body>
+</html>
